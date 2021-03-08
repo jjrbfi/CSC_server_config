@@ -76,7 +76,9 @@ resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff mem
 
 - opencv-python
 
+- Python3-pip
 
+- python3 -m pip install jupyter
 
 # X11forwarding:
 
@@ -90,4 +92,25 @@ To get into the SSH with the X11forwarding permissions **-X** :
 
 ```bash
 ssh -X name@IP -P 2222
+```
+
+
+
+# Access into Jupyter-lab:
+
+1. In case we don't have jupyter running (It's always running in the background):
+
+```
+cd /opt/work/
+jupyter-lab --no-browser --port=8889
+```
+
+2. Command to run into our computer:
+```
+ssh -N -f -L localhost:8888:localhost:8889 username@your_remote_host_name
+```
+
+3. Open browser and type:
+```
+localhost:8888
 ```
