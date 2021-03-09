@@ -99,6 +99,8 @@ ssh -X name@IP -P 2222
 # Access into Jupyter-lab:
 
 1. In case we don't have jupyter running (It's always running in the background):
+    - To check if we have it running you get back the PID number with command: ```pgrep jupyter-lab```
+
 
 ```
 cd /opt/work/
