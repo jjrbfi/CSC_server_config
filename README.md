@@ -60,7 +60,7 @@ resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff mem
 
 - In **/opt/work/** are located the Darknet directory and weights
   
-  - **/opt/work** have 777 rights 
+  - **/opt/work/** have 777 rights 
 
 - **/opt/work/notes/readme.md** File with all the server configuration
 
@@ -80,6 +80,15 @@ resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff mem
 
 - python3 -m pip install jupyter
 
+- nomacs
+
+# nomacs (Image viewer)
+
+If you want to load an image run (Remember X11 flag):
+```
+nomacs imame.jpg
+```
+
 # X11forwarding:
 
 When we run the the predictions we get back a picture with the predictions in coloured boxes and written in the terminal.
@@ -88,7 +97,7 @@ In order to get **windows** predicctions over SSH we enabled the X11forwarding.
 
 
 
-To get into the SSH with the X11forwarding permissions **-X** :
+To get into the SSH with the X11forwarding permissions add the flag **-X** :
 
 ```bash
 ssh -X name@IP -P 2222
@@ -98,9 +107,8 @@ ssh -X name@IP -P 2222
 
 # Access into Jupyter-lab:
 
-1. In case we don't have jupyter running (It's always running in the background):
-    - To check if we have it running you get back the PID number with command: ```pgrep jupyter-lab```
-
+1. To check if we have Jupyter-lab running you will get back the PID number with this command: ```pgrep jupyter-lab```
+   -  In case we don't have jupyter running:
 
 ```
 cd /opt/work/
