@@ -137,3 +137,22 @@ ssh -N -f -L localhost:8888:localhost:8889 username@your_remote_host_name
 ```
 localhost:8888
 ```
+
+# Doing a training with **tmux**
+If we do a training connected by SSH and we lost the conection, all will be gone.
+So using **tmux** we can have a session attached and with can disconect and reconect and we will have the session working all the time until we remove it.
+
+#### Creating a session called "work":
+```
+tmux new -s work
+```
+
+🛠 Now we can run our training ...
+
+#### ↪️ To deatach the session press:
+Ctrl + b, d
+
+Now we can left the server without any problem 🆒! .
+
+#### ↩️ To attach again in the last session use:
+Ctrl + b, a
