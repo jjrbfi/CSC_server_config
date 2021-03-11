@@ -75,8 +75,6 @@ resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff mem
   
   - **/opt/work/** have 777 rights 
 
-- **/opt/work/notes/readme.md** File with all the server configuration
-
 - To connect into the server we have to change the SSH port to **2222** with **-p 2222**
 
 # Installed:
