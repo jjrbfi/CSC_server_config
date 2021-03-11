@@ -1,6 +1,9 @@
 # Hardware
 
-**RAM**
+
+<details>
+     <summary>:black_small_square: <b>RAM</b></summary>
+
 
 ```
      total        used        free      shared  buff/cache   available
@@ -8,8 +11,13 @@ Mem: 115Gb       340Mb        98Gb       1.0Mb        15Gb       113Gb
 Swap:   0B          0B          0B
 
 ```
+</details>
 
-**CPU**
+
+
+
+<details>
+     <summary>:black_small_square: <b>CPU</b></summary>
 
 ```
 Architecture:                    x86_64
@@ -39,8 +47,12 @@ L2 cache:                        56 MiB
 L3 cache:                        224 MiB
 NUMA node0 CPU(s):               0-13
 ```
+</details>
 
-**GPU**
+
+
+<details>
+     <summary>:black_small_square: <b>GPU</b></summary>
 
 ```
 description: 3D controller
@@ -55,6 +67,7 @@ capabilities: pm msi pciexpress bus_master cap_list
 configuration: driver=nvidia latency=0
 resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff memory:2000000000-23ffffffff memory:2400000000-2401ffffff
 ```
+</details>
 
 # Config
 
