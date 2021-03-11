@@ -90,6 +90,7 @@ resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff mem
 - Python3-pip
 
 - python3 -m pip install jupyter
+  - After you installed it. Add this into **.bashrc**:  ```export PATH="$HOME/.local/bin:$PATH"```
 
 - nomacs
 
