@@ -149,10 +149,10 @@ tmux new -s work
 
 🛠 Now we can run our training ...
 
-#### ↪️ To deatach the session press:
+#### ↪️ To deattach the session press:
 Ctrl + b, d
 
 Now we can left the server without any problem 🆒! .
 
-#### ↩️ To attach again in the last session use:
+#### ↩️ To attach again into the last session use:
 Ctrl + b, a
