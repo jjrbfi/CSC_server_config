@@ -128,7 +128,7 @@ jupyter-lab --no-browser --port=8889
 
 2. Command to run into our computer:
 ```
-ssh -N -f -L localhost:8888:localhost:8889 username@your_remote_host_name
+ssh -N -f -L localhost:8888:localhost:8889 username@server_IP -p 2222
 ```
 
 3. Open browser and type:
