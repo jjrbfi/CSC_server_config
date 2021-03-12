@@ -142,6 +142,8 @@ jupyter-lab --no-browser --port=8881
 ssh -N -f -L localhost:8888:localhost:8881 username@server_IP -p 2222
 ```
 
+[image2](images/2.png)
+
 3. Open browser and type:
 ```
 localhost:8888
