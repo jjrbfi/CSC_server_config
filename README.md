@@ -134,7 +134,8 @@ In case we have multiple users in the server and we will them use jupyterlab, ea
 cd /opt/work/
 jupyter-lab --no-browser --port=8881
 ```
-[image1](images/1.png)
+<img src="images/1.png" alt="image1" width="500"/>
+
 
 
 2. Command to run in our computer:
