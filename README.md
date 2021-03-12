@@ -89,8 +89,9 @@ resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff mem
 
 - Python3-pip
 
-- python3 -m pip install jupyterlab
+- python3 -m pip install jupyterlab  **# Each user need to install it in order to get it working individually.**
   - After you installed it. Add this into **.bashrc**:  ```export PATH="$HOME/.local/bin:$PATH"```
+  - Highly recommend to put **password** to access into Jupyterlab. Do this the first time you run the jupyterlab.
 
 - nomacs
 
@@ -119,17 +120,24 @@ ssh -X name@IP -P 2222
 
 # Access into Jupyter-lab:
 
+In case we have multiple users in the server and we will them use jupyterlab, each user need to install jupyterlab and choose a port for each user also as this example:
+| Username      | port     |
+| :------------- | :----------: |
+|  user1 | **8881**   |
+| user2   | **8882** |
+
+
 1. To check if we have Jupyter-lab running you will get back the PID number with this command: ```pgrep jupyter-lab```
    -  In case we don't have jupyter running:
 
 ```
 cd /opt/work/
-jupyter-lab --no-browser --port=8889
+jupyter-lab --no-browser --port=8881
 ```
 
-2. Command to run into our computer:
+2. Command to run in our computer:
 ```
-ssh -N -f -L localhost:8888:localhost:8889 username@server_IP -p 2222
+ssh -N -f -L localhost:8888:localhost:8881 username@server_IP -p 2222
 ```
 
 3. Open browser and type:
