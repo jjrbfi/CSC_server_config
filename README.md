@@ -168,4 +168,11 @@ Ctrl + b, d
 Now we can left the server without any problem 🆒! .
 
 #### ↩️ To attach again into the last session use:
-Ctrl + b, a
+```
+tmux a
+```
+
+#### 🗃 To see the active sessions:
+```
+tmux ls
+```
