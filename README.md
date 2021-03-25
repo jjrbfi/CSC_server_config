@@ -176,3 +176,8 @@ tmux a
 ```
 tmux ls
 ```
+
+### 📥 To attach into session by name:
+```
+tmux attach-session -t my_session
+```
