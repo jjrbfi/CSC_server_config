@@ -103,7 +103,7 @@ resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff mem
 
 If you want to load an image run (Remember X11 flag):
 ```
-nomacs imame.jpg
+nomacs image.jpg
 ```
 
 # 🛂 X11forwarding:
