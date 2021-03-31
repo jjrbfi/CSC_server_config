@@ -69,7 +69,7 @@ resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff mem
 ```
 </details>
 
-# Config
+# ⚙️ Config
 
 - In **/opt/work/** are located the Darknet directory and weights
   
@@ -77,7 +77,7 @@ resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff mem
 
 - To connect into the server we have to change the SSH port to **2222** with **-p 2222**
 
-# Installed:
+# 📋 Installed:
 
 - Nvidia drivers, CUDA and CUDNN
 
@@ -95,14 +95,18 @@ resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff mem
 
 - nomacs
 
-# nomacs (Image viewer)
+# 🗜 YOLOv3 configuration:
+#### [YOLO configuration - NAI20SP](https://github.com/jjrbfi/CSC_server_config/tree/main/yolov3_info)
+
+
+# 🖼 nomacs (Image viewer)
 
 If you want to load an image run (Remember X11 flag):
 ```
 nomacs imame.jpg
 ```
 
-# X11forwarding:
+# 🛂 X11forwarding:
 
 When we run the the predictions we get back a picture with the predictions in coloured boxes and written in the terminal.
 
@@ -118,7 +122,7 @@ ssh -X name@IP -P 2222
 
 
 
-# Access into Jupyter-lab:
+# 📒 Access into Jupyter-lab:
 
 In case we have multiple users in the server and we will them use jupyterlab, each user need to install jupyterlab and choose a port for each user also as this example:
 | Username      | port     |
@@ -150,7 +154,7 @@ ssh -N -f -L localhost:8888:localhost:8881 username@server_IP -p 2222
 localhost:8888
 ```
 
-# Doing a training with **tmux**
+# 🗃 Doing a training with **tmux**
 If we do a training connected by SSH and we lost the conection, all will be gone.
 
 Using **tmux** we can have a session attached working all the time until we remove it. So we can disconnect and reconnect anytime. 
@@ -172,7 +176,7 @@ Now we can left the server without any problem 🆒! .
 tmux a
 ```
 
-#### 🗃 To see the active sessions:
+#### 🗂 To see the active sessions:
 ```
 tmux ls
 ```
