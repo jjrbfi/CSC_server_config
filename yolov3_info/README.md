@@ -33,5 +33,5 @@ In order to get mAP, precision, recall and other metris. Add this flag at end of
 
 ## 🎥 Creating prediction from input_video.mp4 and save it into output_video.mp4:
 ```
-./darknet detector demo data/my_test_data/obj.data cfg/yolov4-nai20sp.cfg data/my_test_data/backup/yolov4-nai20sp_last.weights input_video.mp4 -i 0 -out_filename output_video.avi -dont_show
+./darknet detector demo data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg data/my_test_data/backup/yolov3-nai20sp_last.weights input_video.mp4 -i 0 -out_filename output_video.avi -dont_show
 ```
