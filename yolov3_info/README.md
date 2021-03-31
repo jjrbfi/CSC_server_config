@@ -1,7 +1,7 @@
 # Yolov3 configurations and commands:
 
 ## Yolov3 config:
-See the file: **yolov3-nai20sp.cfg**
+See the file: [Yolov3-nai20sp.cfg](https://github.com/jjrbfi/CSC_server_config/blob/main/yolov3_info/yolov3-nai20sp.cfg)
 
 ## Doing a training:
 ```
