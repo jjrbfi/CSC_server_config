@@ -7,8 +7,7 @@ See the file: [Yolov3-nai20sp.cfg](https://github.com/jjrbfi/CSC_server_config/b
 ```
 ./darknet detector train data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg ../darknet53.conv.74
 ```
-If we don't want to have to get the chart appear into the windows when training is running, add this flag at end of command:
-**-dont_show**
+If we don't want to have the chart appear into the screen when training is running. Add this flag at end of command: **-dont_show**
 
 The same flag it's used to get plot or our key metrics in the terminal.
 
