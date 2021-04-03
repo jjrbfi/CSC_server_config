@@ -19,10 +19,10 @@ If you want/need to have all the output in one text file named **log** you have 
 
 
 ## 📈 Calculating (mAP), precision, recall and other metrics.
+In order to get the metrics. Add the flag **-map** at the command:
 ```
 ./darknet detector train data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg ../darknet53.conv.74 -map -dont_show
 ``` 
-In order to get mAP, precision, recall and other metris. Add this flag at end of the command:
 **-map**
 
 ## 📊 Evaluating model on validation data:
@@ -30,7 +30,8 @@ In order to get mAP, precision, recall and other metris. Add this flag at end of
 ./darknet detector map data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg data/my_test_data/backup/yolov3-nai20sp_best.weights
 ```
 
-## 🏷 Test a group of images and save the result in a text file (result.txt): 
+## 🏷 Test a group of images and save the result in a text file (result.txt):
+The group of files in this example are localed at (data/my_test_data/test.txt)
 ```
 ./darknet detector test data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg data/my_test_data/backup/yolov3-nai20sp_final.weights -dont_show -ext_output < data/my_test_data/test.txt > result.txt
 ```
