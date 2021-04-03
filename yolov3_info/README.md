@@ -30,6 +30,11 @@ In order to get mAP, precision, recall and other metris. Add this flag at end of
 ./darknet detector map data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg data/my_test_data/backup/yolov3-nai20sp_best.weights
 ```
 
+## 🏷 Test a group of images and save the result in a text file (test.txt): 
+```
+./darknet detector test data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg data/my_test_data/backup/yolov3-nai20sp_final.weights -dont_show -ext_output < data/my_test_data/test.txt > result.txt
+```
+
 ## 🎥 Creating prediction from input_video.mp4 and save it into output_video.mp4:
 ```
 ./darknet detector demo data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg data/my_test_data/backup/yolov3-nai20sp_last.weights input_video.mp4 -i 0 -out_filename output_video.avi -dont_show
