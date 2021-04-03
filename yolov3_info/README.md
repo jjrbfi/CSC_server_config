@@ -23,7 +23,6 @@ In order to get the metrics. Add the flag **-map** at the command:
 ```
 ./darknet detector train data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg ../darknet53.conv.74 -map -dont_show
 ``` 
-**-map**
 
 ## 📊 Evaluating model on validation data:
 ```
