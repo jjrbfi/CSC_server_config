@@ -39,3 +39,12 @@ The group of files in this example are localed at (data/my_test_data/test.txt)
 ```
 ./darknet detector demo data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg data/my_test_data/backup/yolov3-nai20sp_last.weights input_video.mp4 -i 0 -out_filename output_video.avi -dont_show
 ```
+---
+
+# Other interesting commands:
+
+## 📑 Check how many images we have in a file (by line):
+In this example we used the **test.txt** file, you can change that for **train.txt** or whatever.
+```
+wc -l /opt/work/darknet/data/my_test_data/test.txt | awk '{print $1}'
+```
