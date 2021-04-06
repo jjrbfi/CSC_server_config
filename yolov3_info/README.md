@@ -43,8 +43,8 @@ The group of files in this example are localed at (data/my_test_data/test.txt)
 
 # Other interesting commands:
 
-## 📑 Check how many images we have in a file (by line):
-In this example we used the **test.txt** file, you can change that for **train.txt** or whatever.
+## 📑 Check how many lines we have in a file:
+In this example we used the **test.txt** file, you can change that for **train.txt** or whatever to see how many images we have.
 ```
 wc -l /opt/work/darknet/data/my_test_data/test.txt | awk '{print $1}'
 ```
