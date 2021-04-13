@@ -186,7 +186,13 @@ tmux a
 tmux ls
 ```
 
-#### 📥 To attach into session by name:
+#### 📎 To attach into session by name:
 ```
 tmux attach-session -t my_session
+```
+
+# 📥 Download a file from server to our computer by SCP:
+With the following command you will download the file yolov3_best.weights into your current directory.
+```
+scp -P 2222 user@IP:/opt/work/darknet/data/my_test_data/backup/yolov3_best.weights .
 ```
