@@ -48,3 +48,7 @@ In this example we used the **test.txt** file, you can change that for **train.t
 ```
 wc -l /opt/work/darknet/data/my_test_data/test.txt | awk '{print $1}'
 ```
+## 🖼 Count images in current directory:
+```
+find . -type f -print0 | xargs -0 file -i | grep -i image | wc -l
+```
