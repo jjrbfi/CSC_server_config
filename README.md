@@ -95,8 +95,8 @@ resources: iomemory:200-1ff iomemory:240-23f irq:11 memory:fd000000-fdffffff mem
 
 - nomacs
 
-# 🗜 YOLOv3 configuration:
-#### [YOLO configuration - NAI20SP](https://github.com/jjrbfi/CSC_server_config/tree/main/yolov3_info)
+# 🗜 YOLO config & scripts:
+#### [YOLO configuration & scripts - NAI20SP](https://github.com/jjrbfi/CSC_server_config/tree/main/yolov3_info)
 
 
 # 🖼 nomacs (Image viewer)
