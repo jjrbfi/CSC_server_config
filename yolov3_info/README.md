@@ -52,3 +52,8 @@ wc -l /opt/work/darknet/data/my_test_data/test.txt | awk '{print $1}'
 ```
 find . -type f -print0 | xargs -0 file -i | grep -i image | wc -l
 ```
+
+# 📃 Scripts
+
+#### [Image augmentation with imgaug](https://github.com/dnissimi/imgaug-yolov3)
+#### [Scripts to work with the images and label files](https://github.com/oskarforssell/ai_project)
