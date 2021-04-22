@@ -53,7 +53,8 @@ wc -l /opt/work/darknet/data/my_test_data/test.txt | awk '{print $1}'
 find . -type f -print0 | xargs -0 file -i | grep -i image | wc -l
 ```
 
-## Convert all images from jpge to jpg:
+## Convert all images from jpeg to jpg in a row:
+Do this command in the same directory were are the images jpeg.
 ```
 ls | grep -v jpg$ | while IFS= read -r FILENAME; do     convert "${FILENAME}" "${FILENAME%.*}.jpg"; done
 ```
