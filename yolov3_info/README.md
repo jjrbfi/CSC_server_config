@@ -54,7 +54,7 @@ find . -type f -print0 | xargs -0 file -i | grep -i image | wc -l
 ```
 
 ## Convert all images from jpeg to jpg in a row:
-Do this command in the same directory were are the images jpeg.
+Do this command in the same directory where are the images jpeg.
 ```
 ls | grep -v jpg$ | while IFS= read -r FILENAME; do     convert "${FILENAME}" "${FILENAME%.*}.jpg"; done
 ```
