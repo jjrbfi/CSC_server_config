@@ -53,6 +53,12 @@ wc -l /opt/work/darknet/data/my_test_data/test.txt | awk '{print $1}'
 find . -type f -print0 | xargs -0 file -i | grep -i image | wc -l
 ```
 
+## Convert all images from jpge to jpg:
+```
+ls | grep -v jpg$ | while IFS= read -r FILENAME; do     convert "${FILENAME}" "${FILENAME%.*}.jpg"; done
+```
+
+
 # 📃 Scripts
 
 #### [Image augmentation with imgaug](https://github.com/dnissimi/imgaug-yolov3)
