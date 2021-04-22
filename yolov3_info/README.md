@@ -11,7 +11,7 @@ If we don't want to have the chart appear into the screen when training is runni
 
 The same flag it's used to get plot or our key metrics in the terminal.
 
-## 📝 Saving output to a text file:
+## 📋 Saving output to a text file:
 If you want/need to have all the output in one text file named **log** you have to add this at the end of the command:
 ```
 2>&1 > log.txt
@@ -53,12 +53,21 @@ wc -l /opt/work/darknet/data/my_test_data/test.txt | awk '{print $1}'
 find . -type f -print0 | xargs -0 file -i | grep -i image | wc -l
 ```
 
-## Convert all images from jpeg to jpg in a row:
+## 🔩 Convert all images from jpeg to jpg in a row:
 Do this command in the same directory where are the images jpeg.
 ```
 ls | grep -v jpg$ | while IFS= read -r FILENAME; do     convert "${FILENAME}" "${FILENAME%.*}.jpg"; done
 ```
 
+## 📖 Create empy 'labels' .txt from each image file:
+```
+ls | grep -v jp$ | while IFS= read -r FILENAME; do     touch "${FILENAME%.*}.txt"; done
+```
+
+## 📝 Add certain images in the end of file:
+```
+ls *.jpg | sed s,\',,g | while IFS= read -r FILENAME; do    echo `pwd`/${FILENAME}; done >> train.txt
+```
 
 # 📃 Scripts
 
