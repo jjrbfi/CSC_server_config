@@ -64,7 +64,7 @@ ls | grep -v jpg$ | while IFS= read -r FILENAME; do     convert "${FILENAME}" "$
 ls | grep -v jp$ | while IFS= read -r FILENAME; do     touch "${FILENAME%.*}.txt"; done
 ```
 
-## 📝 Add certain images in the end of file:
+## 📝 Add all images in current directory into the end of file especified:
 ```
 ls *.jpg | sed s,\',,g | while IFS= read -r FILENAME; do    echo `pwd`/${FILENAME}; done >> train.txt
 ```
