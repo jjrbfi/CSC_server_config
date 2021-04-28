@@ -69,6 +69,12 @@ ls | grep -v jp$ | while IFS= read -r FILENAME; do     touch "${FILENAME%.*}.txt
 ls *.jpg | sed s,\',,g | while IFS= read -r FILENAME; do    echo `pwd`/${FILENAME}; done >> train.txt
 ```
 
+## Remove spaces from files in a row:
+Run this command in the same folder that you have the images.
+```
+for oldname in *.jpg; do newname=`echo $oldname | sed -e 's/ //g'`; mv "$oldname" "$newname"; done
+```
+
 # 📃 Scripts
 
 #### [Image augmentation with imgaug](https://github.com/dnissimi/imgaug-yolov3)
