@@ -72,7 +72,7 @@ ls *.jpg | sed s,\',,g | while IFS= read -r FILENAME; do    echo `pwd`/${FILENAM
 ## Remove spaces from files in a row:
 Run this command in the same folder that you have the images.
 ```
-for oldname in *.jpg; do newname=`echo $oldname | sed -e 's/ //g'`; mv "$oldname" "$newname"; done
+for oldname in *; do newname=`echo $oldname | sed -e 's/ //g'`; mv "$oldname" "$newname"; done
 ```
 
 # 📃 Scripts
