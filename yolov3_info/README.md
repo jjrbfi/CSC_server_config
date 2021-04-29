@@ -4,8 +4,13 @@
 See the file: [Yolov3-nai20sp.cfg](https://github.com/jjrbfi/CSC_server_config/blob/main/yolov3_info/yolov3-nai20sp.cfg)
 
 ## 🛠 Doing a training:
+With a pre-trained weight.
 ```
 ./darknet detector train data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg ../darknet53.conv.74
+```
+Without a pre-trained weight.
+```
+./darknet detector train data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg
 ```
 If we don't want to have the chart appear into the screen when training is running. Add this flag at end of command: **-dont_show**
 
