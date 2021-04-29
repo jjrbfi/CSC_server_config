@@ -22,7 +22,6 @@ If you want/need to have all the output in one text file named **log** you have 
 2>&1 > log.txt
 ```
 
-
 ## 📈 Calculating (mAP), precision, recall and other metrics.
 In order to get the metrics. Add the flag **-map** at the command:
 ```
@@ -32,6 +31,12 @@ In order to get the metrics. Add the flag **-map** at the command:
 ## 📊 Evaluating model on validation data:
 ```
 ./darknet detector map data/my_test_data/obj.data cfg/yolov3-nai20sp.cfg data/my_test_data/backup/yolov3-nai20sp_best.weights
+```
+If you want to change the iou_thresh you have to add this at the end of the command:
+0.25 = 25%
+0.75 = 75%
+```
+-iou_thresh 0.25
 ```
 
 ## 🏷 Test a group of images and save the result in a text file (result.txt):
