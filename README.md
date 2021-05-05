@@ -153,7 +153,7 @@ ssh -N -f -L localhost:8888:localhost:8881 username@server_IP -p 2222
 ```
 localhost:8888
 ```
-# 🛠 Check if there are training on goin:
+# 🛠 Check if there are training on going:
 If we get back a nummber means that some user is doing a training.
 ```
 pgrep darknet
