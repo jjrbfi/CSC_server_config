@@ -160,7 +160,7 @@ pgrep darknet
 ```
 
 # 🗃 Doing a training with **tmux**
-If we do a training connected by SSH and we lost the conection, all will be gone.
+If we do a training connected by SSH and we lost the conection, all will be gone in case the process is not running on background.
 
 Using **tmux** we can have a session attached working all the time until we remove it. So we can disconnect and reconnect anytime. 
 
